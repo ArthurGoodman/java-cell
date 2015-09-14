@@ -75,7 +75,6 @@ import org.lwjgl.opengl.GL11;
 import org.lwjgl.opengl.GLContext;
 
 public class Engine {
-
     private long lastFrame;
 
     private int fps;
@@ -648,5 +647,4 @@ public class Engine {
     private long getTime() {
         return Sys.getTime() * 1000 / Sys.getTimerResolution();
     }
-
 }
