@@ -1,0 +1,19 @@
+
+int step() {
+    int c = cell(0, 0);
+    int d;
+
+    if(c < 15) d = c + 1;
+    else d = 0;
+
+    if(cell(-1, 0) == d || cell(1, 0) == d || cell(0, -1) == d || cell(0, 1) == d) return d;
+    else return c;
+}
+
+vec4 color(float cell) {
+    return hsvToRgb(cell / 15.0, 1.0, 1.0);
+}
+
+int fill() {
+    return int(rand() * 15.0 + 0.5);
+}

@@ -1,0 +1,11 @@
+int step() {
+    return 0;
+}
+
+vec4 color(float cell) {
+    return vec4(0.0, 0.0, 0.0, 0.0);
+}
+
+int fill() { 
+    return 0;
+}

@@ -1,0 +1,12 @@
+int step() {
+    if(int((float(x()) + float(y())) / 2.0 + 0.5) > int(200.0 * rand() + 0.5)) return cell(0, 0);
+    else return cell(int(rand() * 2.0 + 0.5), int(rand() * 2.0 + 0.5));
+}
+
+vec4 color(float cell) {
+    return hsvToRgb(cell / 15.0, 1.0, 1.0);
+}
+
+int fill() {
+    return int(rand() * 15.0 + 0.5);
+}
